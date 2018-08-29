@@ -17,6 +17,7 @@ In terms of raw data, there is no dataset of youtube and explicit videos that I 
 For analyzing the audio data, there are two approaches that I plan on taking. One is to analyze the waveforms of the audio and the other is to analyze the transcripts. To generate the transcripts from each of the videos I plan on feeding the audio data to a speech to text generator to create a rough transcript for each video.
 
 In terms of features I am still unsure about the features I will be generating from the waveforms to distinguish them from each other. For the audio waveforms I will be initially using the features that can be extracted from the librosa [packages] For the transcripts, I believe the diversity of words and the most common words will be useful features to capture.
+
 [packages]: https://librosa.github.io/librosa/feature.html
 
 One specific source of data that I will not be using is the title and description of videos as I believe the way that the explicit videos would be titled and described on Youtube would be different than how they are presented on the explicit websites.
