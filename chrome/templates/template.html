@@ -1,0 +1,68 @@
+<!doctype html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel='stylesheet' href='/static/css/style.css'/>
+  </head>
+
+  <body>
+
+    <div class="jumbotron">
+      <h1 class="display-4">Cheekie</h1>
+      <hr class="my-4">
+      <p>An audio based video classifier to determine whether or not provided sex-related
+      content is suitable for minors.</p>
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+        <input id='taburl'></input>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-info btn-sm" id="autofill">
+            Autofill url
+          </button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-primary btn-sm" id="model">
+            Run Model
+          </button>
+        </div>
+      </div>
+
+    <br>
+
+    <div class="container" id='spinner'>
+      <img src='spinner.gif' />
+    </div>
+
+    <table class="table table-borderless table-sm" id="results">
+      <tbody>
+        <tr>
+          <th scope="row">Label</th>
+          <td><span id='label'></span></td>
+        </tr>
+        <tr>
+          <th scope="row">Explicit Probability</th>
+          <td><span id='probability'></span></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+
+    <!-- Jquery script implementation -->
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/scripts/popup.js"></script>
+
+  </body>
+
+</html>
