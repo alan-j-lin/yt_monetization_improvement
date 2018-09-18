@@ -1,4 +1,5 @@
 $('#spinner').hide();
+$('#result_message').hide();
 
 $('#autofill').click( () => {
   grab_url();
@@ -32,7 +33,7 @@ function categorize(){
 
   console.log(features);
 
-  $('#results').hide();
+  $('#label').hide();
   $('#spinner').fadeIn(1000);
 
 
@@ -47,12 +48,12 @@ function categorize(){
 
       let label = result['label']
       let probability = result['probability']
-      
-      $('#label').html(label)
-      $('#probability').html(probability)
 
-      $('#spinner').fadeOut(2000);
-      $('#results').fadeIn(1000);
+      $('#result').html(label)
+      // $('#probability').html(probability)
+
+      $('#spinner').fadeOut(1000);
+      $('#result_message').fadeIn(1000);
 
     },
     error: (result) => {

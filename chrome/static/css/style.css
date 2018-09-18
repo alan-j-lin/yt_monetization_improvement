@@ -1,8 +1,45 @@
-body{
-  background-color: #eaa81b;
+#autofill{
+  color: #eeeeee;
+  background-color: #2b007b;
   font-family: 'Helvetica';
-};
+  font-size: 14pt;
+  box-shadow: 2px 2px #393e46;
+  border: none;
+}
 
-.navbar{
-  background-color: #012c0b;
-};
+#model{
+  color: #eeeeee;
+  background-color: #2b007b;
+  font-family: 'Helvetica';
+  font-size: 14pt;
+  box-shadow: 2px 2px #393e46;
+  border: none;
+}
+
+#taburl{
+  width: 250px;
+  background-color: #393e46;
+  color: #eeeeee;
+  font-size: 14pt;
+  margin: auto;
+}
+
+#spinner{
+  height: 100px;
+  width: auto;
+  margin: auto;
+}
+
+
+#bottom{
+  font-size: 24pt;
+  margin: auto;
+}
+
+body{
+  font-family: 'Helvetica';
+  width: 300px;
+  color: #232931;
+  background-color: #eeeeee;
+  text-align: center;
+}

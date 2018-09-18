@@ -88,13 +88,13 @@ def get_classification(data):
 
     if vid_probability >= 0.5:
         response = {
-            'label': 'explicit',
+            'label': 'Explicit',
             'probability': vid_probability
         }
         
     else:
         response = {
-            'label': 'education',
+            'label': 'Education',
             'probability': vid_probability
         }
     return response

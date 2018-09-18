@@ -10,23 +10,20 @@
 
   <body>
 
-    <div class="jumbotron">
-      <h1 class="display-4">Cheekie</h1>
-      <hr class="my-4">
-      <p>An audio based video classifier to determine whether or not provided sex-related
-      content is suitable for minors.</p>
-    </div>
-
     <div class="container">
+
+      <br>
 
       <div class="row">
         <input id='taburl'></input>
       </div>
 
+      <br>
+
       <div class="row">
         <div class="col">
           <button type="button" class="btn btn-info btn-sm" id="autofill">
-            Autofill url
+            Autofill URL
           </button>
         </div>
         <div class="col">
@@ -39,10 +36,10 @@
     <br>
 
     <div class="container" id='spinner'>
-      <img src='spinner.gif' />
+      <img src='../spinner.gif' />
     </div>
 
-    <table class="table table-borderless table-sm" id="results">
+    <!-- <table class="table table-borderless table-sm" id="results">
       <tbody>
         <tr>
           <th scope="row">Label</th>
@@ -53,7 +50,16 @@
           <td><span id='probability'></span></td>
         </tr>
       </tbody>
-    </table>
+    </table> -->
+
+
+    <div class="container" id='bottom'>
+
+      <div class="container" id='result_message'>
+        <span id='result'></span>
+      </div>
+      
+    </div>
 
   </div>
 
